@@ -13,7 +13,7 @@ const Nav: React.FC<NavProps> = ({ switchSection, currentSection }) => {
                 onClick={() => switchSection('hero')}
                 className={`py-2 px-4 rounded-lg ${
                     currentSection === 'hero'
-                        ? 'bg-blue-500 text-white'
+                        ? 'bg-transparent text-white'
                         : 'bg-white text-black'
                 }`}
             >
@@ -23,7 +23,7 @@ const Nav: React.FC<NavProps> = ({ switchSection, currentSection }) => {
                 onClick={() => switchSection('about')}
                 className={`py-2 px-4 rounded-lg ${
                     currentSection === 'about'
-                        ? 'bg-blue-500 text-white'
+                        ? 'bg-transparent text-white'
                         : 'bg-white text-black'
                 }`}
             >

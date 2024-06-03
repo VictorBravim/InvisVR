@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Hero from '../components/Hero';
 import About from '../components/About';
-import Nav from '../components/Nav'; 
 
 const Home: React.FC = () => {
     const [currentSection, setCurrentSection] = useState<'hero' | 'about'>('hero');
@@ -26,7 +25,6 @@ const Home: React.FC = () => {
                     <About switchSection={switchSection} currentSection={currentSection} />
                 </div>
             </div>
-            <Nav switchSection={switchSection} currentSection={currentSection} /> 
         </div>
     );
 };

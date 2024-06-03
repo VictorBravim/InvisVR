@@ -9,7 +9,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ switchSection, currentSection }) => {
     return (
-        <div className="h-screen flex flex-col items-center justify-center bg-blue-500 relative">
+        <div className="h-screen flex flex-col items-center justify-center bg-black relative">
             <h1 className="text-4xl font-bold text-white mb-8">Hero Section</h1>
             <Nav switchSection={switchSection} currentSection={currentSection} />
         </div>
