@@ -17,7 +17,7 @@ const Hero: React.FC<HeroProps> = ({ switchSection, currentSection }) => {
                 </div>
                 <div className='absolute flex flex-col justify-center items-center bottom-12'>
                     <h1 className="text-8xl text-center font-bold text-white mb-4">Embark on <span className='text-purple-700'>Virtual <br /> Journeys</span></h1>
-                    <p className="text-white text-lg text-center mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit <br /> Lorem ipsum dolor sit amet.</p>
+                    <p className="text-white text-lg text-center mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere luctus nisl in convallis. <br /> Mauris id ligula ut nunc tempus finibus Praesent tincidunt consequat nisl.</p>
                     <button className="bg-purple-700 text-white px-4 py-2 rounded-lg mb-4">Explore Now</button>
                 </div>
             </div>
