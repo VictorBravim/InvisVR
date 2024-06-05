@@ -1,6 +1,5 @@
 // components/About.tsx
 import React from 'react';
-import Nav from './Nav';
 
 interface AboutProps {
     switchSection: (section: 'hero' | 'about') => void;
@@ -19,7 +18,12 @@ const About: React.FC<AboutProps> = ({ switchSection, currentSection }) => {
                     <button className="bg-purple-700 text-white px-4 py-2 rounded-lg mb-4">Explore Now</button>
                 </div>
             </div>
-            <Nav switchSection={switchSection} currentSection={currentSection} />
+            <button
+                onClick={() => switchSection('hero')}
+                className="absolute bottom-4 right-4 bg-purple-700 text-white px-4 py-2 rounded-lg"
+            >
+                Go to Hero
+            </button>
         </div>
     );
 };

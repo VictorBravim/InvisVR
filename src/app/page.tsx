@@ -16,7 +16,7 @@ const Home: React.FC = () => {
             <div
                 className={`flex transition-transform duration-700 ${currentSection === 'about' ? '-translate-x-full' : ''
                     }`}
-                style={{ width: '100%' }}
+                style={{ width: '100%' }} // Ajuste para 200% para duas seções
             >
                 <div className="w-screen flex-shrink-0">
                     <Hero switchSection={switchSection} currentSection={currentSection} />
