@@ -1,3 +1,4 @@
+// components/Product.tsx
 import React from 'react';
 
 interface ProductProps {
