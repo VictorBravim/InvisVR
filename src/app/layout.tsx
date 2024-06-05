@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ivis",
+  title: "InvisVR",
   description: "Virtual Reality",
 };
 
