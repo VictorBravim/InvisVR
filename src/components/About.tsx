@@ -9,7 +9,7 @@ interface AboutProps {
 
 const About: React.FC<AboutProps> = ({ switchSection, currentSection }) => {
     return (
-        <div className="w-full h-screen flex flex-row items-center justify-center bg-black-custom relative bg-cover bg-center" style={{ backgroundImage: "url('/bg2.png')", }}>
+        <div className="w-full h-screen flex flex-row items-center justify-center bg-black-custom relative bg-cover bg-center" style={{ backgroundImage: "url('/bg2.png')" }}>
             <div className='w-full lg:w-1/2'>
             </div>
             <div className='w-full lg:w-1/2 flex flex-col items-left'>
