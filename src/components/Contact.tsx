@@ -1,12 +1,12 @@
-// components/About.tsx
+// components/Contact.tsx
 import React from 'react';
 
-interface AboutProps {
+interface ContactProps {
     switchSection: (section: 'hero' | 'about' | 'product' | 'contact') => void;
     currentSection: 'hero' | 'about' | 'product' | 'contact';
 }
 
-const About: React.FC<AboutProps> = ({ switchSection, currentSection }) => {
+const Contact: React.FC<ContactProps> = ({ switchSection, currentSection }) => {
     return (
         <div className="w-full h-screen flex flex-row items-center justify-center bg-black-custom relative bg-cover bg-center" style={{ backgroundImage: "url('/bg2.png')" }}>
             <div className='w-full lg:w-1/2'>
@@ -20,18 +20,12 @@ const About: React.FC<AboutProps> = ({ switchSection, currentSection }) => {
             </div>
             <button
                 onClick={() => switchSection('product')}
-                className="absolute bottom-4 right-4 bg-purple-700 text-white px-4 py-2 rounded-lg"
-            >
-                Go to Product
-            </button>
-            <button
-                onClick={() => switchSection('hero')}
                 className="absolute bottom-4 left-4 bg-purple-700 text-white px-4 py-2 rounded-lg"
             >
-                Go to Hero
+                Go to Product
             </button>
         </div>
     );
 };
 
-export default About;
+export default Contact;

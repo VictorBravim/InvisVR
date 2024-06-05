@@ -2,8 +2,8 @@
 import React from 'react';
 
 interface HeroProps {
-    switchSection: (section: 'hero' | 'about' | 'product') => void;
-    currentSection: 'hero' | 'about' | 'product';
+    switchSection: (section: 'hero' | 'about' | 'product' | 'contact') => void;
+    currentSection: 'hero' | 'about' | 'product' | 'contact';
 }
 
 const Hero: React.FC<HeroProps> = ({ switchSection, currentSection }) => {

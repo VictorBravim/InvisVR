@@ -1,8 +1,8 @@
 import React from 'react';
 
 interface ProductProps {
-    switchSection: (section: 'hero' | 'about' | 'product') => void;
-    currentSection: 'hero' | 'about' | 'product';
+    switchSection: (section: 'hero' | 'about' | 'product' | 'contact') => void;
+    currentSection: 'hero' | 'about' | 'product' | 'contact';
 }
 
 const Product: React.FC<ProductProps> = ({ switchSection, currentSection }) => {
@@ -19,6 +19,12 @@ const Product: React.FC<ProductProps> = ({ switchSection, currentSection }) => {
                 className="absolute bottom-4 left-4 bg-purple-700 text-white px-4 py-2 rounded-lg"
             >
                 Go to About
+            </button>
+            <button
+                onClick={() => switchSection('contact')}
+                className="absolute bottom-4 right-4 bg-purple-700 text-white px-4 py-2 rounded-lg"
+            >
+                Go to Contact
             </button>
         </div>
     );
