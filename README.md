@@ -36,7 +36,7 @@ yarn install
 4. Run the development server:
 
 ```
-ng serve --open
+npm run dev
 ```
 
 ## 🛠️ Project Structure
